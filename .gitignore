@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs (frontend)
+frontend/dist/
+frontend/.vite/
+dist/
+build/
+
+# Environment variables / secrets
+.env
+.env.*
+backend/.env
+
+# Uploads (user-generated files)
+backend/uploads/
+
+# Database / dumps / temp files
+backend/db_dump.txt
+backend/db_verify.txt
+*.sqlite
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.eslintcache
+
+# Coverage
+coverage/
+*.lcov
+
+# Optional: large ML / OCR assets (ignore if not required in repo)
+# backend/eng.traineddata
+
+# Misc
+*.out
+*.tmp

@@ -1,0 +1,692 @@
+{
+    "Calcium, Serum": {
+        "category": "Electrolytes & Minerals",
+        "name": "Calcium, Serum",
+        "unit": "mg/dL",
+        "min": 8.6,
+        "max": 10.3,
+        "explanation": "Measures the amount of calcium in the blood, essential for bone health, muscle function, and nerve signaling.",
+        "high_causes": ["Hyperparathyroidism", "Cancer", "Vitamin D toxicity"],
+        "low_causes": ["Hypoparathyroidism", "Vitamin D deficiency", "Kidney disease"]
+    },
+    "Creatinine, Serum": {
+        "category": "Renal Profile",
+        "name": "Creatinine, Serum",
+        "unit": "mg/dL",
+        "min": 0.7,
+        "max": 1.3,
+        "explanation": "A waste product from muscle breakdown, used to evaluate kidney function.",
+        "high_causes": ["Kidney disease", "Dehydration", "Muscle damage"],
+        "low_causes": ["Low muscle mass", "Severe liver disease", "Pregnancy"]
+    },
+    "Urea, Serum": {
+        "category": "Renal Profile",
+        "name": "Urea, Serum",
+        "unit": "mg/dL",
+        "min": 15,
+        "max": 40,
+        "explanation": "Waste product formed in the liver from protein breakdown, excreted by the kidneys.",
+        "high_causes": ["Kidney failure", "Dehydration", "High protein diet"],
+        "low_causes": ["Liver failure", "Malnutrition", "Overhydration"]
+    },
+    "Blood Urea Nitrogen (BUN)": {
+        "category": "Renal Profile",
+        "name": "Blood Urea Nitrogen",
+        "unit": "mg/dL",
+        "min": 7,
+        "max": 20,
+        "explanation": "Measures the amount of nitrogen in the blood that comes from urea.",
+        "high_causes": ["Kidney disease", "Heart failure", "Dehydration"],
+        "low_causes": ["Liver disease", "Malnutrition"]
+    },
+    "BUN/Creatinine Ratio": {
+        "category": "Renal Profile",
+        "name": "BUN/Creatinine Ratio",
+        "unit": "ratio",
+        "min": 10,
+        "max": 20,
+        "explanation": "Helps determine the cause of kidney injury or dehydration.",
+        "high_causes": ["Dehydration", "Heart failure", "Gastrointestinal bleeding"],
+        "low_causes": ["Liver disease", "Malnutrition"]
+    },
+    "Sodium, Serum": {
+        "category": "Electrolytes & Minerals",
+        "name": "Sodium, Serum",
+        "unit": "mEq/L",
+        "min": 135,
+        "max": 145,
+        "explanation": "Crucial electrolyte for maintaining fluid balance and nerve function.",
+        "high_causes": ["Dehydration", "High salt intake", "Diabetes insipidus"],
+        "low_causes": ["Diuretic use", "Kidney disease", "Heart failure"]
+    },
+    "Potassium, Serum": {
+        "category": "Electrolytes & Minerals",
+        "name": "Potassium, Serum",
+        "unit": "mEq/L",
+        "min": 3.5,
+        "max": 5.0,
+        "explanation": "Key electrolyte for muscle and heart function.",
+        "high_causes": ["Kidney disease", "Certain medications", "Severe burns"],
+        "low_causes": ["Diuretics", "Vomiting/Diarrhea", "Low dietary intake"]
+    },
+    "Chloride, Serum": {
+        "category": "Electrolytes & Minerals",
+        "name": "Chloride, Serum",
+        "unit": "mEq/L",
+        "min": 98,
+        "max": 106,
+        "explanation": "Works with sodium to maintain fluid balance and blood pressure.",
+        "high_causes": ["Dehydration", "Kidney disease", "Metabolic acidosis"],
+        "low_causes": ["Prolonged vomiting", "Heart failure", "Addison's disease"]
+    },
+    "Uric Acid, Serum": {
+        "category": "Metabolic",
+        "name": "Uric Acid, Serum",
+        "unit": "mg/dL",
+        "min": 3.5,
+        "max": 7.2,
+        "explanation": "Waste product from the breakdown of purines in food.",
+        "high_causes": ["Gout", "Kidney disease", "High purine diet"],
+        "low_causes": ["Liver disease", "Lead poisoning"]
+    },
+    "Cholesterol - Total": {
+        "category": "Lipid Profile",
+        "name": "Total Cholesterol",
+        "unit": "mg/dL",
+        "min": 0,
+        "max": 199,
+        "explanation": "Overall amount of cholesterol in the blood.",
+        "high_causes": ["Poor diet", "Obesity", "Genetics"],
+        "low_causes": ["Malnutrition", "Liver disease", "Hyperthyroidism"]
+    },
+    "Cholesterol - HDL": {
+        "category": "Lipid Profile",
+        "name": "High-Density Lipoprotein (HDL)",
+        "unit": "mg/dL",
+        "min": 40,
+        "max": 60,
+        "explanation": "The 'good' cholesterol that helps remove other forms of cholesterol from the bloodstream.",
+        "high_causes": ["Regular exercise", "Moderate alcohol intake", "Genetics"],
+        "low_causes": ["Smoking", "Obesity", "Lack of exercise"]
+    },
+    "Triglycerides (TGL)": {
+        "category": "Lipid Profile",
+        "name": "Triglycerides",
+        "unit": "mg/dL",
+        "min": 0,
+        "max": 149,
+        "explanation": "A type of fat found in your blood.",
+        "high_causes": ["Obesity", "Poor diet", "Uncontrolled diabetes"],
+        "low_causes": ["Low fat diet", "Hyperthyroidism", "Malabsorption"]
+    },
+    "Cholesterol - LDL": {
+        "category": "Lipid Profile",
+        "name": "Low-Density Lipoprotein (LDL)",
+        "unit": "mg/dL",
+        "min": 0,
+        "max": 99,
+        "explanation": "The 'bad' cholesterol that can build up in blood vessels.",
+        "high_causes": ["Diet high in saturated fats", "Obesity", "Genetics"],
+        "low_causes": ["Malnutrition", "Hyperthyroidism"]
+    },
+    "Cholesterol - VLDL": {
+        "category": "Lipid Profile",
+        "name": "Very Low-Density Lipoprotein (VLDL)",
+        "unit": "mg/dL",
+        "min": 2,
+        "max": 30,
+        "explanation": "Carries triglycerides in the blood; linked to plaque deposits.",
+        "high_causes": ["High carbohydrate diet", "Obesity", "Diabetes"],
+        "low_causes": ["Weight loss", "Low fat diet"]
+    },
+    "Total Cholesterol/HDL Ratio": {
+        "category": "Lipid Profile",
+        "name": "Total Cholesterol to HDL Ratio",
+        "unit": "ratio",
+        "min": 0,
+        "max": 4.9,
+        "explanation": "Indicator of heart disease risk.",
+        "high_causes": ["High LDL", "Low HDL"],
+        "low_causes": ["Healthy lipid balance"]
+    },
+    "LDL/HDL Ratio": {
+        "category": "Lipid Profile",
+        "name": "LDL to HDL Ratio",
+        "unit": "ratio",
+        "min": 0,
+        "max": 3.5,
+        "explanation": "Specific risk indicator for cardiovascular disease.",
+        "high_causes": ["Atherosclerosis risk", "Poor diet"],
+        "low_causes": ["Good cardiovascular health"]
+    },
+    "Bilirubin Total": {
+        "category": "Liver Function Test",
+        "name": "Total Bilirubin",
+        "unit": "mg/dL",
+        "min": 0.1,
+        "max": 1.2,
+        "explanation": "Yellowish substance made during the normal breakdown of red blood cells.",
+        "high_causes": ["Liver disease", "Hemolytic anemia", "Bile duct obstruction"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Bilirubin Direct": {
+        "category": "Liver Function Test",
+        "name": "Direct (Conjugated) Bilirubin",
+        "unit": "mg/dL",
+        "min": 0.0,
+        "max": 0.3,
+        "explanation": "Bilirubin that has been processed by the liver.",
+        "high_causes": ["Bile duct obstruction", "Liver disease", "Hepatitis"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Bilirubin Indirect": {
+        "category": "Liver Function Test",
+        "name": "Indirect (Unconjugated) Bilirubin",
+        "unit": "mg/dL",
+        "min": 0.2,
+        "max": 0.8,
+        "explanation": "Bilirubin before it reaches the liver.",
+        "high_causes": ["Hemolytic anemia", "Gilbert's syndrome"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Alkaline Phosphatase (ALP)": {
+        "category": "Liver Function Test",
+        "name": "Alkaline Phosphatase",
+        "unit": "IU/L",
+        "min": 44,
+        "max": 147,
+        "explanation": "An enzyme found mostly in the liver, bones, kidneys, and digestive system.",
+        "high_causes": ["Liver disease", "Bone disorders", "Bile duct obstruction"],
+        "low_causes": ["Malnutrition", "Protein deficiency", "Vitamin deficiency"]
+    },
+    "Alanine Aminotransferase (ALT/SGPT)": {
+        "category": "Liver Function Test",
+        "name": "ALT / SGPT",
+        "unit": "U/L",
+        "min": 7,
+        "max": 56,
+        "explanation": "An enzyme found mainly in the liver, released into blood when the liver is damaged.",
+        "high_causes": ["Hepatitis", "Liver cirrhosis", "Fatty liver"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Aspartate Aminotransferase (AST/SGOT)": {
+        "category": "Liver Function Test",
+        "name": "AST / SGOT",
+        "unit": "U/L",
+        "min": 8,
+        "max": 48,
+        "explanation": "An enzyme found in the liver, heart, and muscles.",
+        "high_causes": ["Liver damage", "Muscle injury", "Heart attack"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Gamma Glutamyl Transferase (GGT)": {
+        "category": "Liver Function Test",
+        "name": "Gamma Glutamyl Transferase",
+        "unit": "U/L",
+        "min": 9,
+        "max": 48,
+        "explanation": "Enzyme indicative of liver function and alcohol consumption.",
+        "high_causes": ["Alcohol abuse", "Liver disease", "Bile duct disease"],
+        "low_causes": ["Not clinically significant"]
+    },
+    "Protein Total": {
+        "category": "Liver Function Test",
+        "name": "Total Protein",
+        "unit": "g/dL",
+        "min": 6.0,
+        "max": 8.3,
+        "explanation": "Total amount of albumin and globulin in the blood.",
+        "high_causes": ["Chronic inflammation", "Infection", "Multiple myeloma"],
+        "low_causes": ["Liver disease", "Kidney disease", "Malnutrition"]
+    },
+    "Albumin, Serum": {
+        "category": "Liver Function Test",
+        "name": "Albumin, Serum",
+        "unit": "g/dL",
+        "min": 3.4,
+        "max": 5.4,
+        "explanation": "The most abundant protein in blood plasma, made by the liver.",
+        "high_causes": ["Dehydration"],
+        "low_causes": ["Liver disease", "Kidney disease", "Malnutrition"]
+    },
+    "Globulin": {
+        "category": "Liver Function Test",
+        "name": "Globulin",
+        "unit": "g/dL",
+        "min": 2.0,
+        "max": 3.5,
+        "explanation": "A group of proteins for immune system function.",
+        "high_causes": ["Chronic infections", "Autoimmune diseases", "Multiple myeloma"],
+        "low_causes": ["Liver disease", "Immune deficiency"]
+    },
+    "Albumin / Globulin Ratio": {
+        "category": "Liver Function Test",
+        "name": "Albumin / Globulin Ratio",
+        "unit": "ratio",
+        "min": 1.1,
+        "max": 2.5,
+        "explanation": "Ratio to help identify liver, kidney or immune problems.",
+        "high_causes": ["Underproduction of globulins", "Hypothyroidism"],
+        "low_causes": ["Liver disease", "Kidney disease", "Autoimmune diseases"]
+    },
+    "Fasting Plasma Glucose": {
+        "category": "Diabetes Management",
+        "name": "Fasting Plasma Glucose",
+        "unit": "mg/dL",
+        "min": 70,
+        "max": 99,
+        "explanation": "Measures blood sugar level after fasting.",
+        "high_causes": ["Diabetes", "Insulin resistance", "Stress"],
+        "low_causes": ["Hypoglycemia", "Medication overdose", "Liver disease"]
+    },
+    "Glycosylated Haemoglobin (GHb/HBA1c)": {
+        "category": "Diabetes Management",
+        "name": "HbA1c",
+        "unit": "%",
+        "min": 4.0,
+        "max": 5.6,
+        "explanation": "Average blood sugar levels over the past 3 months.",
+        "high_causes": ["Poorly controlled diabetes", "Insulin resistance"],
+        "low_causes": ["Chronic blood loss", "Hemolytic anemia"]
+    },
+    "Glycated Haemoglobin (A1c)": {
+        "category": "Diabetes Management",
+        "name": "HbA1c",
+        "unit": "%",
+        "min": 4.0,
+        "max": 5.6,
+        "explanation": "Average blood sugar levels over the past 3 months (synonym for GHb/HbA1c).",
+        "high_causes": ["Poorly controlled diabetes", "Insulin resistance"],
+        "low_causes": ["Chronic blood loss", "Hemolytic anemia"]
+    },
+    "Estimated Average Glucose (eAG)": {
+        "category": "Diabetes Management",
+        "name": "Estimated Average Glucose",
+        "unit": "mg/dL",
+        "min": 70,
+        "max": 114,
+        "explanation": "Translates A1c into an average blood sugar level.",
+        "high_causes": ["Diabetes", "Insulin resistance"],
+        "low_causes": ["Hypoglycemia"]
+    },
+    "Hemoglobin": {
+        "category": "Complete Blood Count",
+        "name": "Hemoglobin",
+        "unit": "g/dL",
+        "min": 12.0,
+        "max": 17.5,
+        "explanation": "Protein in red blood cells that carries oxygen.",
+        "high_causes": ["Dehydration", "Lung disease", "Polycythemia vera"],
+        "low_causes": ["Anemia", "Bleeding", "Iron deficiency"]
+    },
+    "Erythrocyte Count (RBC Count)": {
+        "category": "Complete Blood Count",
+        "name": "RBC Count",
+        "unit": "million/uL",
+        "min": 4.1,
+        "max": 5.9,
+        "explanation": "Total number of red blood cells.",
+        "high_causes": ["Dehydration", "Heart condition", "Polycythemia vera"],
+        "low_causes": ["Anemia", "Bleeding", "Kidney disease"]
+    },
+    "Hematocrit (PCV)": {
+        "category": "Complete Blood Count",
+        "name": "Hematocrit",
+        "unit": "%",
+        "min": 36,
+        "max": 50,
+        "explanation": "Percentage of blood volume occupied by red blood cells.",
+        "high_causes": ["Dehydration", "Lung condition", "Polycythemia vera"],
+        "low_causes": ["Anemia", "Bleeding", "Nutritional deficiency"]
+    },
+    "Platelet Count": {
+        "category": "Complete Blood Count",
+        "name": "Platelets",
+        "unit": "thou/uL",
+        "min": 150,
+        "max": 450,
+        "explanation": "Cells that help blood to clot.",
+        "high_causes": ["Infection", "Inflammation", "Thrombocytosis"],
+        "low_causes": ["Viral infection", "Liver disease", "Thrombocytopenia"]
+    },
+    "Mean Corpuscular Volume (MCV)": {
+        "category": "Complete Blood Count",
+        "name": "Mean Corpuscular Volume",
+        "unit": "fL",
+        "min": 80,
+        "max": 100,
+        "explanation": "Average size of red blood cells.",
+        "high_causes": ["Vitamin B12 deficiency", "Folate deficiency", "Alcoholism"],
+        "low_causes": ["Iron deficiency anemia", "Thalassemia"]
+    },
+    "Mean Corpuscular Hemoglobin (MCH)": {
+        "category": "Complete Blood Count",
+        "name": "Mean Corpuscular Hemoglobin",
+        "unit": "pg",
+        "min": 27,
+        "max": 33,
+        "explanation": "Average amount of hemoglobin per red blood cell.",
+        "high_causes": ["Macrocytic anemia", "Vitamin B12 deficiency"],
+        "low_causes": ["Iron deficiency anemia", "Microcytic anemia"]
+    },
+    "Mean Corpuscular Hemoglobin Concentration (MCHC)": {
+        "category": "Complete Blood Count",
+        "name": "MCHC",
+        "unit": "g/dL",
+        "min": 32,
+        "max": 36,
+        "explanation": "Average concentration of hemoglobin in a given volume of red blood cells.",
+        "high_causes": ["Hereditary spherocytosis", "Severe burns"],
+        "low_causes": ["Iron deficiency anemia", "Thalassemia"]
+    },
+    "Red Blood Cell Distribution Width (RDW-CV)": {
+        "category": "Complete Blood Count",
+        "name": "RDW-CV",
+        "unit": "%",
+        "min": 11.5,
+        "max": 14.5,
+        "explanation": "Variation in size of red blood cells.",
+        "high_causes": ["Iron deficiency anemia", "Vitamin B12 deficiency", "Recent bleeding"],
+        "low_causes": ["Macrocytosis", "Microcytosis"]
+    },
+    "Total Leucocyte Count (WBC)": {
+        "category": "Complete Blood Count",
+        "name": "WBC Count",
+        "unit": "thou/uL",
+        "min": 4.5,
+        "max": 11.0,
+        "explanation": "Total number of white blood cells, immune system function.",
+        "high_causes": ["Infection", "Inflammation", "Leukemia"],
+        "low_causes": ["Bone marrow suppression", "Viral infections", "Autoimmune disorders"]
+    },
+    "Neutrophils": {
+        "category": "Complete Blood Count",
+        "name": "Neutrophils",
+        "unit": "%",
+        "min": 40,
+        "max": 70,
+        "explanation": "Primary white blood cells to fight bacterial infections.",
+        "high_causes": ["Bacterial infection", "Inflammation", "Stress"],
+        "low_causes": ["Viral infection", "Chemotherapy", "Bone marrow disorder"]
+    },
+    "Lymphocytes": {
+        "category": "Complete Blood Count",
+        "name": "Lymphocytes",
+        "unit": "%",
+        "min": 20,
+        "max": 40,
+        "explanation": "White blood cells important for immune response, particularly to viruses.",
+        "high_causes": ["Viral infections", "Leukemia"],
+        "low_causes": ["Autoimmune diseases", "HIV", "Chemotherapy"]
+    },
+    "Eosinophils": {
+        "category": "Complete Blood Count",
+        "name": "Eosinophils",
+        "unit": "%",
+        "min": 1,
+        "max": 6,
+        "explanation": "White blood cells involved in allergic reactions and against parasites.",
+        "high_causes": ["Allergies", "Parasitic infection", "Asthma"],
+        "low_causes": ["Stress", "Corticosteroid use"]
+    },
+    "Monocytes": {
+        "category": "Complete Blood Count",
+        "name": "Monocytes",
+        "unit": "%",
+        "min": 2,
+        "max": 8,
+        "explanation": "White blood cells that break down foreign materials.",
+        "high_causes": ["Chronic infections", "Autoimmune disorders", "Leukemia"],
+        "low_causes": ["Bone marrow damage", "Chemotherapy"]
+    },
+    "Basophils": {
+        "category": "Complete Blood Count",
+        "name": "Basophils",
+        "unit": "%",
+        "min": 0,
+        "max": 1,
+        "explanation": "White blood cells involved in allergic and inflammatory responses.",
+        "high_causes": ["Severe allergic reactions", "Chronic inflammation", "Leukemia"],
+        "low_causes": ["Acute allergic reactions", "Hyperthyroidism"]
+    },
+    "RBC Morphology": {
+        "category": "Morphology",
+        "name": "RBC Morphology",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Describes the shape and appearance of red blood cells.",
+        "high_causes": ["Sickle cell anemia", "Thalassemia", "Iron deficiency (abnormal shapes)"],
+        "low_causes": []
+    },
+    "WBC Morphology": {
+        "category": "Morphology",
+        "name": "WBC Morphology",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Describes the state and maturity of white blood cells.",
+        "high_causes": ["Infection (toxic granulation)", "Leukemia (blasts)"],
+        "low_causes": []
+    },
+    "Platelet Morphology": {
+        "category": "Morphology",
+        "name": "Platelet Morphology",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Describes the size and appearance of platelets.",
+        "high_causes": ["Giant platelets in certain disorders"],
+        "low_causes": []
+    },
+    "Erythrocyte Sedimentation Rate (ESR)": {
+        "category": "Inflammation Marker",
+        "name": "ESR",
+        "unit": "mm/hr",
+        "min": 0,
+        "max": 20,
+        "explanation": "A general marker for inflammation in the body.",
+        "high_causes": ["Infection", "Inflammation", "Autoimmune disease"],
+        "low_causes": ["Polycythemia", "Congestive heart failure", "Sickle cell anemia"]
+    },
+    "Colour": {
+        "category": "Urine Analysis",
+        "name": "Urine Colour",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Visual assessment of urine color.",
+        "high_causes": ["Dehydration", "Liver disease (dark)", "Blood in urine (red)"],
+        "low_causes": ["Overhydration (pale)"]
+    },
+    "Appearance": {
+        "category": "Urine Analysis",
+        "name": "Urine Appearance",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Visual clarity of the urine.",
+        "high_causes": ["Infection (turbid/cloudy)", "Crystals (cloudy)", "Protein (foamy)"],
+        "low_causes": ["Clear (normal)"]
+    },
+    "pH": {
+        "category": "Urine Analysis",
+        "name": "Urine pH",
+        "unit": "pH",
+        "min": 4.5,
+        "max": 8.0,
+        "explanation": "Measures the acidity or alkalinity of urine.",
+        "high_causes": ["Kidney disease", "Urinary tract infection", "Vegetarian diet"],
+        "low_causes": ["Diabetic ketoacidosis", "Starvation", "High protein diet"]
+    },
+    "Specific Gravity": {
+        "category": "Urine Analysis",
+        "name": "Specific Gravity",
+        "unit": null,
+        "min": 1.005,
+        "max": 1.030,
+        "explanation": "Concentration of particles in the urine.",
+        "high_causes": ["Dehydration", "Diabetes", "Heart failure"],
+        "low_causes": ["High fluid intake", "Kidney failure", "Diabetes insipidus"]
+    },
+    "Protein": {
+        "category": "Urine Analysis",
+        "name": "Urine Protein",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Detects presence of protein in urine (should be negative).",
+        "high_causes": ["Kidney disease", "High blood pressure", "Diabetes"],
+        "low_causes": ["Normal"]
+    },
+    "Glucose": {
+        "category": "Urine Analysis",
+        "name": "Urine Glucose",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Detects presence of glucose in urine (should be negative).",
+        "high_causes": ["Diabetes mellitus", "Pregnancy", "Kidney disorder"],
+        "low_causes": ["Normal"]
+    },
+    "Ketones": {
+        "category": "Urine Analysis",
+        "name": "Urine Ketones",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Detects presence of ketones in urine (should be negative).",
+        "high_causes": ["Diabetic ketoacidosis", "Starvation", "Strict low-carb diet"],
+        "low_causes": ["Normal"]
+    },
+    "Bile Salts": {
+        "category": "Urine Analysis",
+        "name": "Urine Bile Salts",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Indicator of liver or biliary tract disease.",
+        "high_causes": ["Obstructive jaundice", "Liver disease"],
+        "low_causes": ["Normal"]
+    },
+    "Bile Pigments": {
+        "category": "Urine Analysis",
+        "name": "Urine Bile Pigments",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Indicator of liver dysfunction.",
+        "high_causes": ["Hepatitis", "Biliary obstruction"],
+        "low_causes": ["Normal"]
+    },
+    "Nitrite": {
+        "category": "Urine Analysis",
+        "name": "Urine Nitrite",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Sign of a bacterial infection in the urinary tract.",
+        "high_causes": ["Urinary tract infection (UTI)"],
+        "low_causes": ["Normal"]
+    },
+    "Blood": {
+        "category": "Urine Analysis",
+        "name": "Urine Blood",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Detects blood cells or hemoglobin in urine.",
+        "high_causes": ["Kidney stones", "Infection", "Trauma"],
+        "low_causes": ["Normal"]
+    },
+    "Urobilinogen": {
+        "category": "Urine Analysis",
+        "name": "Urine Urobilinogen",
+        "unit": "mg/dL",
+        "min": 0.2,
+        "max": 1.0,
+        "explanation": "Byproduct of bilirubin breakdown.",
+        "high_causes": ["Liver disease", "Hemolytic anemia"],
+        "low_causes": ["Bile duct obstruction"]
+    },
+    "Leukocytes": {
+        "category": "Urine Analysis",
+        "name": "Urine Leukocytes",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Indicates white blood cells in urine (infection).",
+        "high_causes": ["Urinary tract infection", "Kidney infection", "Inflammation"],
+        "low_causes": ["Normal"]
+    },
+    "Bilirubin": {
+        "category": "Urine Analysis",
+        "name": "Urine Bilirubin",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Should be negative; presence indicates liver problem.",
+        "high_causes": ["Liver disease", "Bile duct blockage"],
+        "low_causes": ["Normal"]
+    },
+    "PUS Cells": {
+        "category": "Urine Analysis",
+        "name": "PUS Cells",
+        "unit": "HPF",
+        "min": 0,
+        "max": 5,
+        "explanation": "White blood cells in urine viewed under a microscope.",
+        "high_causes": ["UTI", "Kidney infection", "Inflammation"],
+        "low_causes": ["Normal"]
+    },
+    "RBC Cells": {
+        "category": "Urine Analysis",
+        "name": "RBC Cells (Microscopic)",
+        "unit": "HPF",
+        "min": 0,
+        "max": 2,
+        "explanation": "Red blood cells in urine viewed under a microscope.",
+        "high_causes": ["Kidney stones", "Infection", "Tumor"],
+        "low_causes": ["Normal"]
+    },
+    "Epithelial Cells": {
+        "category": "Urine Analysis",
+        "name": "Epithelial Cells",
+        "unit": "HPF",
+        "min": 0,
+        "max": 5,
+        "explanation": "Cells from the lining of the urinary tract.",
+        "high_causes": ["Normal sloughing", "Infection", "Inflammation"],
+        "low_causes": ["Normal"]
+    },
+    "Casts": {
+        "category": "Urine Analysis",
+        "name": "Urinary Casts",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Cylindrical structures formed in the kidneys.",
+        "high_causes": ["Kidney disease", "Dehydration", "Vigorous exercise"],
+        "low_causes": ["Normal"]
+    },
+    "Crystals": {
+        "category": "Urine Analysis",
+        "name": "Urinary Crystals",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Can indicate kidney stones or metabolic issues.",
+        "high_causes": ["Kidney stones", "Gout", "High protein diet"],
+        "low_causes": ["Normal"]
+    },
+    "Others (Yeast & Bacteria)": {
+        "category": "Urine Analysis",
+        "name": "Yeast & Bacteria",
+        "unit": null,
+        "min": null,
+        "max": null,
+        "explanation": "Microorganisms in the urine.",
+        "high_causes": ["Bacterial or fungal infection (e.g., Candidiasis)"],
+        "low_causes": ["Normal (none observed)"]
+    }
+}
